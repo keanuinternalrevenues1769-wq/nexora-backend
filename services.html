@@ -1,187 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nexora Digital Assets Ltd - Services</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexora Digital Assets Ltd - Services</title>
 
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-        }
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
 
-        body {
-            background: #0b1020;
-            color: white;
-        }
+    body {
+      background: #0b1020;
+      color: white;
+      line-height: 1.6;
+    }
 
-        header {
-            background: #111936;
-            padding: 20px;
-            text-align: center;
-        }
+    header {
+      background: #111936;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 1px solid #26345f;
+    }
 
-        header h1 {
-            color: #4da3ff;
-            margin-bottom: 8px;
-        }
+    header h1 {
+      color: #4da3ff;
+      font-size: 28px;
+    }
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 10px;
-        }
+    nav {
+      margin-top: 12px;
+    }
 
-        nav a:hover {
-            color: #4da3ff;
-        }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 15px;
+    }
 
-        .hero {
-            text-align: center;
-            padding: 60px 20px 30px;
-        }
+    nav a:hover {
+      color: #4da3ff;
+    }
 
-        .hero h2 {
-            font-size: 36px;
-            margin-bottom: 15px;
-        }
+    .hero {
+      text-align: center;
+      padding: 60px 20px 40px;
+    }
 
-        .hero p {
-            color: #b8c0d9;
-            font-size: 18px;
-        }
+    .hero h2 {
+      font-size: 38px;
+      margin-bottom: 15px;
+      color: #4da3ff;
+    }
 
-        .services {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            padding: 40px 7%;
-        }
+    .hero p {
+      max-width: 700px;
+      margin: auto;
+      color: #c8d0e8;
+      font-size: 17px;
+    }
 
-        .card {
-            background: #151d3b;
-            padding: 30px;
-            border-radius: 15px;
-            text-align: center;
-            border: 1px solid #26345f;
-        }
+    .services {
+      max-width: 1100px;
+      margin: 30px auto 70px;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
 
-        .card h3 {
-            color: #4da3ff;
-            margin-bottom: 15px;
-        }
+    .service-card {
+      background: #111936;
+      border: 1px solid #26345f;
+      border-radius: 15px;
+      padding: 30px 22px;
+      text-align: center;
+      transition: 0.3s;
+    }
 
-        .card p {
-            color: #c6ccdd;
-            line-height: 1.6;
-        }
+    .service-card:hover {
+      transform: translateY(-6px);
+      border-color: #4da3ff;
+    }
 
-        .contact {
-            text-align: center;
-            padding: 40px 20px;
-            background: #111936;
-        }
+    .service-card .icon {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
 
-        .contact a {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 12px 25px;
-            background: #4da3ff;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-        }
+    .service-card h3 {
+      color: #4da3ff;
+      margin-bottom: 12px;
+      font-size: 21px;
+    }
 
-        footer {
-            text-align: center;
-            padding: 20px;
-            color: #8e96ad;
-        }
-    </style>
+    .service-card p {
+      color: #c8d0e8;
+      font-size: 15px;
+    }
+
+    .cta {
+      text-align: center;
+      padding: 50px 20px;
+      background: #111936;
+    }
+
+    .cta h2 {
+      margin-bottom: 15px;
+    }
+
+    .cta p {
+      color: #c8d0e8;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #4da3ff;
+      color: white;
+      text-decoration: none;
+      padding: 12px 25px;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background: #287fd4;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #8d98b8;
+      font-size: 14px;
+    }
+  </style>
 </head>
 
 <body>
 
-<header>
+  <header>
     <h1>NEXORA</h1>
-    <p>Digital Assets Ltd</p>
 
     <nav>
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="login.html">Login</a>
+      <a href="register.html">Register</a>
     </nav>
-</header>
+  </header>
 
-<section class="hero">
+  <section class="hero">
     <h2>Our Services</h2>
-    <p>Professional digital asset and blockchain solutions.</p>
-</section>
+    <p>
+      Nexora Digital Assets Ltd provides modern digital asset and
+      cryptocurrency services designed to make digital finance simple,
+      secure and accessible.
+    </p>
+  </section>
 
-<section class="services">
+  <section class="services">
 
-    <div class="card">
-        <h3>Digital Assets</h3>
-        <p>
-            Access professional solutions for managing and understanding
-            digital assets and cryptocurrency.
-        </p>
+    <div class="service-card">
+      <div class="icon">₿</div>
+      <h3>Crypto Trading</h3>
+      <p>
+        Access cryptocurrency trading services and manage your digital
+        assets through a simple and user-friendly platform.
+      </p>
     </div>
 
-    <div class="card">
-        <h3>Crypto Payments</h3>
-        <p>
-            Explore secure and convenient cryptocurrency payment solutions
-            for digital transactions.
-        </p>
+    <div class="service-card">
+      <div class="icon">💳</div>
+      <h3>Crypto Payments</h3>
+      <p>
+        Send and receive supported digital assets for online transactions
+        and business payments.
+      </p>
     </div>
 
-    <div class="card">
-        <h3>Blockchain Solutions</h3>
-        <p>
-            Build and integrate modern blockchain technologies into
-            digital products and business platforms.
-        </p>
+    <div class="service-card">
+      <div class="icon">🔐</div>
+      <h3>Digital Asset Security</h3>
+      <p>
+        We focus on security-conscious systems and practices to help
+        protect user accounts and digital asset information.
+      </p>
     </div>
 
-    <div class="card">
-        <h3>Digital Security</h3>
-        <p>
-            Security-focused solutions designed to help protect digital
-            accounts, transactions and valuable information.
-        </p>
+    <div class="service-card">
+      <div class="icon">📊</div>
+      <h3>Market Information</h3>
+      <p>
+        Stay informed with cryptocurrency market information and digital
+        asset insights to support better decision-making.
+      </p>
     </div>
 
-    <div class="card">
-        <h3>Business Solutions</h3>
-        <p>
-            Technology solutions designed to help businesses participate
-            in the growing digital economy.
-        </p>
+    <div class="service-card">
+      <div class="icon">🌐</div>
+      <h3>Blockchain Solutions</h3>
+      <p>
+        Explore blockchain-based solutions for modern businesses,
+        applications and digital financial services.
+      </p>
     </div>
 
-    <div class="card">
-        <h3>Customer Support</h3>
-        <p>
-            Get assistance and guidance with Nexora digital services
-            and platform features.
-        </p>
+    <div class="service-card">
+      <div class="icon">🏢</div>
+      <h3>Business Digital Assets</h3>
+      <p>
+        Digital asset solutions designed to support businesses adopting
+        cryptocurrency and blockchain technology.
+      </p>
     </div>
 
-</section>
+  </section>
 
-<section class="contact">
+  <section class="cta">
     <h2>Ready to Get Started?</h2>
-    <p>Explore Nexora and discover our digital asset solutions.</p>
+    <p>
+      Create your Nexora account and explore our digital asset platform.
+    </p>
 
-    <a href="index.html">Back to Home</a>
-</section>
+    <a href="register.html" class="btn">Create Account</a>
+  </section>
 
-<footer>
-    <p>© 2026 Nexora Digital Assets Ltd. All rights reserved.</p>
-</footer>
+  <footer>
+    © 2026 Nexora Digital Assets Ltd. All rights reserved.
+  </footer>
 
 </body>
 </html>
