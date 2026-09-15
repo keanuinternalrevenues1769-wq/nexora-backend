@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Nexora Digital Assets</title>
+
+  <meta name="description" content="Nexora Digital Assets - Digital asset solutions, crypto services and blockchain technology.">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #07111f;
+      color: white;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #081525;
+      border-bottom: 1px solid #1c334d;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav {
+      max-width: 1200px;
+      margin: auto;
+      padding: 18px 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 26px;
+      font-weight: bold;
+      color: #25e0dc;
+    }
+
+    .logo span {
+      color: white;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 15px;
+    }
+
+    nav ul li a:hover {
+      color: #25e0dc;
+    }
+
+    .hero {
+      min-height: 650px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(135deg, #07111f, #0b2235);
+    }
+
+    .hero-content {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .hero h1 {
+      font-size: 55px;
+      margin-bottom: 20px;
+      line-height: 1.1;
+    }
+
+    .hero h1 span {
+      color: #25e0dc;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: 0 auto 35px;
+      color: #b9c8d8;
+      font-size: 19px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .primary {
+      background: #25e0dc;
+      color: #06101b;
+    }
+
+    .primary:hover {
+      background: #18c3c0;
+      transform: translateY(-2px);
+    }
+
+    .secondary {
+      border: 1px solid #25e0dc;
+      color: #25e0dc;
+    }
+
+    .secondary:hover {
+      background: #25e0dc;
+      color: #06101b;
+    }
+
+    section {
+      padding: 80px 20px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .section-title h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .section-title p {
+      color: #aebdca;
+    }
+
+    .services {
+      background: #091827;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .card {
+      background: #0d2032;
+      padding: 30px;
+      border-radius: 12px;
+      border: 1px solid #1b3851;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: #25e0dc;
+    }
+
+    .card .icon {
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      color: #25e0dc;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #b8c7d5;
+    }
+
+    .about {
+      background: #07111f;
+    }
+
+    .about-content {
+      max-width: 850px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .about-content p {
+      color: #bdcbd8;
+      font-size: 17px;
+      margin-bottom: 20px;
+    }
+
+    .cta {
+      background: linear-gradient(135deg, #0b2638, #07111f);
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-size: 38px;
+      margin-bottom: 15px;
+    }
+
+    .cta p {
+      color: #b8c7d5;
+      margin-bottom: 30px;
+    }
+
+    footer {
+      background: #050c15;
+      border-top: 1px solid #1b3043;
+      text-align: center;
+      padding: 30px 20px;
+      color: #8999a8;
+    }
+
+    footer .brand {
+      color: #25e0dc;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    @media (max-width: 800px) {
+      nav ul {
+        gap: 12px;
+      }
+
+      nav ul li a {
+        font-size: 13px;
+      }
+
+      .hero h1 {
+        font-size: 40px;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .section-title h2 {
+        font-size: 30px;
+      }
+    }
+
+    @media (max-width: 500px) {
+      nav {
+        padding: 15px;
+      }
+
+      .logo {
+        font-size: 21px;
+      }
+
+      nav ul {
+        gap: 8px;
+      }
+
+      nav ul li a {
+        font-size: 11px;
+      }
+
+      .hero {
+        min-height: 580px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <header>
+    <nav>
+      <div class="logo">NEXORA<span> Digital Assets</span></div>
+
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+
+      <h1>
+        The Future of <span>Digital Assets</span>
+      </h1>
+
+      <p>
+        Welcome to Nexora Digital Assets — a modern digital asset and
+        blockchain-focused platform built to connect people with the
+        evolving world of cryptocurrency and financial technology.
+      </p>
+
+      <div class="buttons">
+        <a href="#services" class="btn primary">Explore Services</a>
+        <a href="#contact" class="btn secondary">Get Started</a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Our Services</h2>
+        <p>Modern solutions for the digital economy.</p>
+      </div>
+
+      <div class="cards">
+
+        <div class="card">
+          <div class="icon">₿</div>
+          <h3>Digital Assets</h3>
+          <p>
+            Explore digital asset solutions designed for the
+            rapidly changing cryptocurrency ecosystem.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">🔗</div>
+          <h3>Blockchain</h3>
+          <p>
+            Discover blockchain technology and innovative
+            decentralized solutions for the future.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">💳</div>
+          <h3>Crypto Payments</h3>
+          <p>
+            Modern payment concepts designed around the
+            growing digital asset economy.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+
+    <div class="container">
+
+      <div class="section-title">
+        <h2>About Nexora</h2>
+      </div>
+
+      <div class="about-content">
+
+        <p>
+          Nexora Digital Assets is a forward-looking digital
+          technology brand focused on cryptocurrency, blockchain
+          and digital financial solutions.
+        </p>
+
+        <p>
+          Our goal is to build simple, professional and accessible
+          digital experiences for people participating in the
+          evolving digital economy.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CALL TO ACTION -->
+  <section class="cta" id="contact">
+
+    <div class="container">
+
+      <h2>Build Your Digital Future</h2>
+
+      <p>
+        Connect with Nexora Digital Assets and discover what's
+        possible in the digital economy.
+      </p>
+
+      <a href="mailto:contact@nexora.com" class="btn primary">
+        Contact Nexora
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="brand">
+      NEXORA DIGITAL ASSETS
+    </div>
+
+    <p>
+      © 2026 Nexora Digital Assets. All rights reserved.
+    </p>
+
+  </footer>
+
+</body>
+</html>
